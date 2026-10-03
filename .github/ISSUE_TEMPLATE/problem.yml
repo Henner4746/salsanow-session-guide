@@ -1,0 +1,27 @@
+name: Problem or verification report
+description: Report a reproducible problem or a new test result.
+body:
+  - type: markdown
+    attributes:
+      value: "Remove keys, private domains and personal data before submitting."
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and versions
+      description: OS, Python, LM Studio, cloudflared; local or cloud session?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce or verify
+      description: State whether you tested a full session reset.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected and actual results
+      description: Redacted error messages only; no environment dumps or tokens.
+    validations:
+      required: true

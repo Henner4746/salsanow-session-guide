@@ -1,0 +1,34 @@
+# Actual credentials and private host files
+.env
+.env.*
+!.env.example
+private/
+secrets/
+tunnel-token.txt
+*-token.txt
+api-credentials*.md
+*.key
+*.pem
+*.pfx
+*.p12
+cert.pem
+credentials.json
+
+# Application state, downloaded models and private logs
+.lmstudio/
+lmstudio-data/
+models/
+*.gguf
+*.log
+
+# Python and operating systems
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Distribution output
+dist/

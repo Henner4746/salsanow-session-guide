@@ -1,0 +1,21 @@
+name: Improvement or confirmed workaround
+description: Suggest a useful addition to the community guide.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would this help people do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested solution
+      description: Link official documentation when available. Do not include credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What have you tested?
+      description: Include tool versions and distinguish a session reset from an app restart.
