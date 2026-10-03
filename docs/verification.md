@@ -14,7 +14,7 @@ Prepared on 2026-10-03. The newer supplied `HANDOFF-MAIN-PC.md` takes precedence
 | Starter HTTP handling and environment setup | Repository's automated tests | Verified against local fixtures; no live user's endpoint or key required |
 | Windows CMD and PowerShell launchers | 17-test suite passed locally on Windows with Python 3.14 | Both launchers successfully checked the authenticated local fixture |
 | Model-list authentication after a reported host restart | Client-side API check during preparation | HTTP 200 with the test key, HTTP 401 without it; two model IDs listed. This was not a post-restart completion or duration test. |
-| macOS/Linux launcher execution | CI workflow supplied | CI results must be inspected after publication; local Windows checks do not constitute a run on those OSes |
+| Windows/macOS/Linux launcher execution | [GitHub test run](https://github.com/Henner4746/salsanow-session-guide/actions/runs/37149390481), 2026-10-03 | All six jobs passed: three operating systems with Python 3.10 and 3.13; 17 fixture tests per job. No request to the private live endpoint was made. |
 
 The older text claimed all commands were executed and verified while later admitting some paths were untested. This version keeps reported observations, documented features and pending tests separate. It also avoids claiming that startup registry writes prove registry deletion.
 
